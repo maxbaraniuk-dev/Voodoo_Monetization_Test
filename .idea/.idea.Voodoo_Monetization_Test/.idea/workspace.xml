@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dc84a5bc-15b5-4930-8bff-7122f75f69a4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/User/IUserSystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/User/IUserSystem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/User/UserData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/User/UserData.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MaxBaraniuk-MOS&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/maxbaraniuk-dev/Voodoo_Monetization_Test.git&quot;,
+    &quot;accountId&quot;: &quot;a6994806-6386-4b65-a19f-a4c387fa5426&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2e4f6f2f0cbc49d29c14929b6621bdbfc400/67/a92a19ce/VideoPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/Internal/AdsConfig.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/PublicAPI/Monetization.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/User/IUserSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/User/UserData.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="34LJlPp63kuRZwsGxXUmhX9D6IC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.2.7f2/Unity.app/Contents/MacOS/Unity" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath $PROJECT_DIR$ -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.2.7f2/Unity.app/Contents/MacOS/Unity" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath $PROJECT_DIR$ -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="useMixedMode" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="useMixedMode" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Device" type="UnityDevicePlayer" factoryName="UnityAttachToDevicePlayer">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dc84a5bc-15b5-4930-8bff-7122f75f69a4" name="Changes" comment="" />
+      <created>1760987069706</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1760987069706</updated>
+      <workItem from="1760987069908" duration="4670000" />
+      <workItem from="1761052487900" duration="8484000" />
+      <workItem from="1761115153004" duration="10475000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityProjectDiscoverer">
+    <option name="hasUnityReference" value="true" />
+    <option name="unityProject" value="true" />
+    <option name="unityProjectFolder" value="true" />
+  </component>
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/PublicAPI/Monetization.cs</url>
+          <line>137</line>
+          <properties documentPath="$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/API/Monetization.cs" containingFunctionPresentation="Method 'ShowRewardedAds'">
+            <startOffsets>
+              <option value="5969" />
+            </startOffsets>
+            <endOffsets>
+              <option value="5986" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/PublicAPI/Monetization.cs</url>
+          <line>149</line>
+          <properties documentPath="$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/API/Monetization.cs" containingFunctionPresentation="Method 'ShowRewardedAds'">
+            <startOffsets>
+              <option value="6253" />
+            </startOffsets>
+            <endOffsets>
+              <option value="6307" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/UI/DifficultySelectDialog.cs</url>
+          <line>61</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/UI/DifficultySelectDialog.cs" containingFunctionPresentation="Method 'UnlockLevel'">
+            <startOffsets>
+              <option value="2402" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2494" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/PublicAPI/Monetization.cs</url>
+          <line>120</line>
+          <properties documentPath="$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/API/Monetization.cs" containingFunctionPresentation="Method 'IsAdsReady'">
+            <startOffsets>
+              <option value="5224" />
+            </startOffsets>
+            <endOffsets>
+              <option value="5241" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/PublicAPI/Monetization.cs</url>
+          <line>126</line>
+          <properties documentPath="$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/API/Monetization.cs" containingFunctionPresentation="Method 'IsAdsReady'">
+            <startOffsets>
+              <option value="5381" />
+            </startOffsets>
+            <endOffsets>
+              <option value="5406" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/Internal/Platform/Editor/EditorMonetizationSDK.cs</url>
+          <line>105</line>
+          <properties documentPath="$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/Platform/Editor/EditorMonetizationSDK.cs" containingFunctionPresentation="Method 'ShowRewardedAds'">
+            <startOffsets>
+              <option value="4302" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4303" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/Internal/AdsPlayer.cs</url>
+          <line>52</line>
+          <properties documentPath="$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/Assets/Scripts/AdsPlayer.cs" containingFunctionPresentation="Method 'OnVideoEnded'">
+            <startOffsets>
+              <option value="1439" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1462" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/SaveLoad/LocalStorage.cs</url>
+          <line>11</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/SaveLoad/LocalStorage.cs" containingFunctionPresentation="Method 'Save'">
+            <startOffsets>
+              <option value="244" />
+            </startOffsets>
+            <endOffsets>
+              <option value="277" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/Internal/AdsPlayer.cs</url>
+          <line>60</line>
+          <properties documentPath="$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/Assets/Scripts/AdsPlayer.cs" containingFunctionPresentation="Method 'OnPrepared'">
+            <startOffsets>
+              <option value="1657" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1672" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Editor/MonetizationEditorWindow.cs</url>
+          <line>61</line>
+          <properties documentPath="$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Editor/MonetizationEditorWindow.cs" containingFunctionPresentation="Method 'SaveToFile'">
+            <startOffsets>
+              <option value="1710" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1749" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/PublicAPI/Monetization.cs</url>
+          <line>56</line>
+          <properties documentPath="$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/API/Monetization.cs" containingFunctionPresentation="Method 'Initialize'">
+            <startOffsets>
+              <option value="2358" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2386" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/PublicAPI/Monetization.cs</url>
+          <line>33</line>
+          <properties documentPath="$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/API/Monetization.cs" containingFunctionPresentation="Method 'Initialize'">
+            <startOffsets>
+              <option value="1506" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1565" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/PublicAPI/Monetization.cs</url>
+          <line>34</line>
+          <properties documentPath="$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/API/Monetization.cs" containingFunctionPresentation="Method 'Initialize'">
+            <startOffsets>
+              <option value="1578" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1601" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

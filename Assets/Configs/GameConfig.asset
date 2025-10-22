@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0ff17e56ec0472cb5ed18a348b96f35, type: 3}
+  m_Name: GameConfig
+  m_EditorClassIdentifier: Assembly-CSharp::Game.GameConfig
+  easyMazeData:
+    exitCount: 1
+    mazeWidth: 10
+    mazeHeight: 10
+  mediumMazeData:
+    exitCount: 2
+    mazeWidth: 30
+    mazeHeight: 30
+  hardMazeData:
+    exitCount: 1
+    mazeWidth: 40
+    mazeHeight: 40
+  playerControllerPrefab: {fileID: 7711773320052191753, guid: 4827d1968a3b84594899748e7f4aeb61, type: 3}
+  gameBackground: {fileID: 680339266487564282, guid: 30cde4bb944dc455b9b602d9d7709752, type: 3}
+  wallPrefab: {fileID: 5335831365577491269, guid: 83a22ef5d48f4475389c89c596cdb153, type: 3}
+  pathPrefab: {fileID: 8893065526788105499, guid: 13807158839fa41dca924a00d69ee428, type: 3}
+  exitPrefab: {fileID: 3880788871572107761, guid: 5fccbf6320830498e9166a94c617295d, type: 3}

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba4cd7ef1279142f2b36bf1eabe3e378, type: 3}
+  m_Name: UIConfig
+  m_EditorClassIdentifier: Assembly-CSharp::Infrastructure.ScriptableObjects.UIConfig
+  views:
+  - {fileID: 2921636474088824263, guid: 2422e446e59384575affe2baf46f2d44, type: 3}
+  - {fileID: 3658650187663978691, guid: d0387b2c47a08409fbed585461da04d0, type: 3}
+  - {fileID: 2674725676811169528, guid: a367d3f03678c4d9fb780668fdb71349, type: 3}
+  - {fileID: 443215909936199018, guid: 523da8f1ee9154765a0caf2386f34781, type: 3}
+  - {fileID: 1858894345175192393, guid: 2aaa2fe227c5740b5b112e95b12020e3, type: 3}
+  - {fileID: 8149071310264035341, guid: 5b20e3a444a4343f493f92928b326ee3, type: 3}
+  viewContainerPrefab: {fileID: 3620284806575596967, guid: 076a49a6703694546b105c82872e3128, type: 3}
