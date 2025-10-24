@@ -4,17 +4,19 @@ using Infrastructure;
 using Logs;
 using UnityEngine;
 using User;
+using Zenject;
 
 namespace SaveLoad
 {
-    public class SaveSystem : MonoBehaviour, ISaveSystem
+    public class SaveSystem : ISaveSystem, ISystem
     {
+        [Inject] ILog _log;
         private const string LevelsDataKey = "levels";
         private const string UserDataKey = "userData";
 
         public void Initialize()
         {
-            Context.GetSystem<ILog>().Debug(() => "SaveSystem initialized");
+            _log.Debug(() => "SaveSystem initialized");
         }
         
         public void Dispose() { }

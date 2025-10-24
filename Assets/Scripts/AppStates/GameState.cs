@@ -2,12 +2,18 @@ using Events;
 using Game;
 using Game.Level;
 using Infrastructure;
+using SaveLoad;
 using UI;
+using Zenject;
 
 namespace AppStates
 {
     public class GameState : IPayLoadedState<DifficultyLevel>
     {
+        [Inject] IGameSystem _gameSystem;
+        [Inject] IUISystem _uiSystem;
+        [Inject] IAppContext _appContext;
+        
         private DifficultyLevel _difficultyLevel;
         public void SetPayload(DifficultyLevel payload)
         {
@@ -16,19 +22,19 @@ namespace AppStates
 
         public void Enter()
         {
-            Context.GetSystem<IUISystem>().ShowView<GameUI>();
-            Context.GetSystem<IGameSystem>().StartNewGame(_difficultyLevel);
+            _uiSystem.ShowView<GameUI>();
+            _gameSystem.StartNewGame(_difficultyLevel);
             EventsMap.Subscribe(UIEvents.OnBackToMenu, OnBackToMenu);
         }
 
         private void OnBackToMenu()
         {
-            Context.AppStateMachine.Enter<LobbyState>();
+            _appContext.AppStateMachine.Enter<LobbyState>();
         }
 
         public void Exit()
         {
-            Context.GetSystem<IGameSystem>().ExitGame();
+            _gameSystem.ExitGame();
             EventsMap.Unsubscribe(UIEvents.OnBackToMenu, OnBackToMenu);
         }
     }

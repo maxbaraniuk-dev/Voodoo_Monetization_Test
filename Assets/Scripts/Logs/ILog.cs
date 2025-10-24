@@ -3,7 +3,7 @@ using Infrastructure;
 
 namespace Logs
 {
-    public interface ILog : ISystem
+    public interface ILog
     {
         void Debug(Func<string> callback, object sender = null);
 

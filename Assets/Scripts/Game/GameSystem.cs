@@ -1,4 +1,4 @@
-using System.Collections;
+using Cysharp.Threading.Tasks;
 using Events;
 using Game.Level;
 using Game.Maze;
@@ -8,12 +8,16 @@ using Logs;
 using SaveLoad;
 using UI;
 using UnityEngine;
+using Zenject;
 
 namespace Game
 {
-    public class GameSystem : MonoBehaviour, IGameSystem
+    public class GameSystem : IGameSystem, ISystem
     {
-        [SerializeField] private GameConfig gameConfig;
+        [Inject] private GameConfig _gameConfig;
+        [Inject] private ILog _log;
+        [Inject] private IUISystem _uiSystem;
+        [Inject] private ISaveSystem _saveSystem;
         
         private GameObject _maze;
         private GameObject _gameBackground;
@@ -26,7 +30,7 @@ namespace Game
 
         public void Initialize()
         {
-            Context.GetSystem<ILog>().Debug(() => "GameSystem initialized");
+            _log.Debug(() => "GameSystem initialized");
         }
         
         public void Dispose() { }
@@ -37,11 +41,12 @@ namespace Game
             _isTargetReached = false;
             _passedTime = 0;
             _difficultyLevel = difficultyLevel;
-            var mazeData = MazeGenerator.Generate(gameConfig.GetMazeData(difficultyLevel));
-            _maze = BuildMaze(mazeData, gameConfig.wallPrefab, gameConfig.pathPrefab, gameConfig.exitPrefab);
+            var mazeData = MazeGenerator.Generate(_gameConfig.GetMazeData(difficultyLevel));
+            _maze = BuildMaze(mazeData, _gameConfig.wallPrefab, _gameConfig.pathPrefab, _gameConfig.exitPrefab);
             var spawnPosition = MazeGenerator.FindNearestToCenter(mazeData);
-            _playerController = Instantiate(gameConfig.playerControllerPrefab, new Vector3(spawnPosition.X, spawnPosition.Y, 0), Quaternion.identity);
-            _gameBackground = Instantiate(gameConfig.gameBackground);
+            _playerController = Object.Instantiate(_gameConfig.playerControllerPrefab, new Vector3(spawnPosition.X, spawnPosition.Y, 0), Quaternion.identity);
+            _gameBackground = Object.Instantiate(_gameConfig.gameBackground);
+            StartUpdateTimer().Forget();
             _isGameStarted = true;
         }
 
@@ -49,41 +54,42 @@ namespace Game
         {
             EventsMap.Unsubscribe<float>(GameEvents.OnTargetReached, OnTargetReached);
             _isGameStarted = false;
-            Destroy(_maze);
-            Destroy(_playerController.gameObject);
-            Destroy(_gameBackground);
+            Object.Destroy(_maze);
+            Object.Destroy(_playerController.gameObject);
+            Object.Destroy(_gameBackground);
         }
 
-        private void Update()
+        private async UniTask StartUpdateTimer()
         {
-            if (!_isGameStarted || _isTargetReached) 
-                return;
-            
-            _passedTime += Time.deltaTime;
-            EventsMap.Dispatch(GameEvents.OnTimeUpdated, _passedTime);
+            while (_isGameStarted && !_isTargetReached)
+            {
+                await UniTask.NextFrame();
+                _passedTime += Time.deltaTime;
+                EventsMap.Dispatch(GameEvents.OnTimeUpdated, _passedTime);
+            }
         }
 
         private void OnTargetReached(float passedDistance)
         {
-            StartCoroutine(LevelCompleteFlow(passedDistance));
+            LevelCompleteFlow(passedDistance).Forget();
         }
 
-        private IEnumerator LevelCompleteFlow(float passedDistance)
+        private async UniTask LevelCompleteFlow(float passedDistance)
         {
             _isTargetReached = true;
             var complete = false;
             _playerController.PlayWinAnimation(()=> complete = true);
-            yield return new WaitWhile(() => !complete);
+            await UniTask.WaitUntil(() => complete);
             
-            Context.GetSystem<IUISystem>().CloseView<GameUI>();
+            _uiSystem.CloseView<GameUI>();
             var levelResultData = new LevelResultData
             {
                 difficultyLevel = _difficultyLevel,
                 time = _passedTime,
                 distance = passedDistance
             };
-            Context.GetSystem<ISaveSystem>().SaveCompletedLevel(levelResultData);
-            Context.GetSystem<IUISystem>().ShowView<LevelCompleteDialog, LevelResultData>(levelResultData);
+            _saveSystem.SaveCompletedLevel(levelResultData);
+            _uiSystem.ShowView<LevelCompleteDialog, LevelResultData>(levelResultData);
         }
 
         private GameObject BuildMaze(int[,] mazeData, GameObject wallPrefab, GameObject pathPrefab, GameObject exitPrefab)
@@ -107,7 +113,7 @@ namespace Game
                     };
 
                     if (prefab == null) continue;
-                    var go = Instantiate(prefab, new Vector3(x, y, 0), Quaternion.identity, root.transform);
+                    var go = Object.Instantiate(prefab, new Vector3(x, y, 0), Quaternion.identity, root.transform);
                     go.name = $"Cell_{x}_{y}";
                 }
             }

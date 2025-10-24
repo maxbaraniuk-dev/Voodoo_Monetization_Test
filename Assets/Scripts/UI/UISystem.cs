@@ -5,23 +5,22 @@ using Infrastructure;
 using Logs;
 using UI.Core;
 using UnityEngine;
+using Zenject;
 
 namespace UI
 {
-    public class UISystem : MonoBehaviour, IUISystem
+    public class UISystem : IUISystem, ISystem
     {
+        [Inject] private ILog _log;
+        [Inject] private UIConfig _uiConfig;
         
-        [SerializeField] private UIConfig uiConfig;
-        
-        private ILog _log;
         private UIContainer _uiContainer;
         readonly List<BaseView> _openedViews = new();
         
         public void Initialize()
         {
-            _log = Context.GetSystem<ILog>();
             _log.Debug(() => "UIManager initialized");
-            _uiContainer = Instantiate(uiConfig.GetUIContainerPrefab());
+            _uiContainer = Object.Instantiate(_uiConfig.GetUIContainerPrefab());
             EventsMap.Subscribe<BaseView>(UIEvents.OnCloseView, OnViewClosedEventListener);
         }
 
@@ -56,7 +55,7 @@ namespace UI
         private void OnViewClosedEventListener(BaseView view)
         {
              _openedViews.Remove(view);
-             Destroy(view.gameObject);
+             Object.Destroy(view.gameObject);
         }
         
         private T CreateView<T>(Transform parent = null) where T : BaseView
@@ -65,7 +64,7 @@ namespace UI
             if (openedView != null) 
                 return openedView as T;
             
-            var widgetPrefab = uiConfig.GetView<T>();
+            var widgetPrefab = _uiConfig.GetView<T>();
             if (widgetPrefab == null)
             {
                 _log.Error(() => $"There no prefab with type {typeof(T)}");
@@ -73,7 +72,7 @@ namespace UI
             }
 
             var root = _uiContainer.GetLayerRoot(widgetPrefab.Layer);
-            var view = Instantiate(widgetPrefab, parent == null ? root : parent);
+            var view = Object.Instantiate(widgetPrefab, parent == null ? root : parent);
             _openedViews.Add(view);
             return view;
         }

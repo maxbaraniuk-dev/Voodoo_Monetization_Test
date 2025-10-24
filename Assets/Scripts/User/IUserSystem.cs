@@ -3,7 +3,7 @@ using Infrastructure;
 
 namespace User
 {
-    public interface IUserSystem : ISystem
+    public interface IUserSystem
     {
         UserData GetUserData();
         void SaveUserData();

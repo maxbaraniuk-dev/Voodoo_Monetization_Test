@@ -1,12 +1,13 @@
 using System;
+using Infrastructure;
 using Infrastructure.Core;
-using UnityEngine;
+using Zenject;
 
 namespace Logs
 {
-    public class LogEditor : MonoBehaviour, ILog
+    public class LogEditor : ILog, ISystem
     {
-        [SerializeField] private LogsConfig logsConfig;
+        [Inject] private LogsConfig _logsConfig;
 
         public void Initialize()
         {
@@ -17,7 +18,7 @@ namespace Logs
         
         public void Debug(Func<string> callback, object sender = null)
         {
-            if (logsConfig.GetLogLevel(sender) > LogLevel.Debug)
+            if (_logsConfig.GetLogLevel(sender) > LogLevel.Debug)
                 return;
             
             UnityEngine.Debug.Log(callback.Invoke());
@@ -30,7 +31,7 @@ namespace Logs
 
         public void Warning(Func<string> callback, object sender = null)
         {
-            if (logsConfig.GetLogLevel(sender) > LogLevel.Warning)
+            if (_logsConfig.GetLogLevel(sender) > LogLevel.Warning)
                 return;
             
             UnityEngine.Debug.LogWarning(callback.Invoke());

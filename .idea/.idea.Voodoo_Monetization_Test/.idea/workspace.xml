@@ -5,11 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc84a5bc-15b5-4930-8bff-7122f75f69a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/User/IUserSystem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/User/IUserSystem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/User/UserData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/User/UserData.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Context.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Context/AppContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Context/IAppContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Context/IAppContext.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Voodoo_Monetization_Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Voodoo_Monetization_Test/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AppLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AppLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AppStates/GameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AppStates/GameState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AppStates/LobbyState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AppStates/LobbyState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Events/GameEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Events/GameEvents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/IGameSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/IGameSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Maze/MazeGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Maze/MazeGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/AppStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/AppStateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Context.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Context.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Context/AppContext.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logs/ILog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Logs/ILog.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logs/LogEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Logs/LogEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveLoad/ISaveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SaveLoad/ISaveSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveLoad/LocalStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SaveLoad/LocalStorage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveLoad/SaveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SaveLoad/SaveSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/DifficultySelectDialog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/DifficultySelectDialog.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/IUISystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/IUISystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UISystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UISystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/User/IUserSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/User/IUserSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/User/UserSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/User/UserSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,10 +59,27 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2e4f6f2f0cbc49d29c14929b6621bdbfc400/67/a92a19ce/VideoPlayer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/Internal/AdsConfig.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/PublicAPI/Monetization.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/PublicAPI/Internal/AdsConfig.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/PublicAPI/Monetization.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AppLoader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AppStates/GameState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AppStates/LobbyState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ConfigsInstaller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Context/IAppContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Events/GameEvents.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/GameSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/IGameSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Level/DifficultyLevel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Infrastructure/ISystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Logs/LogEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveLoad/ISaveSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveLoad/SaveSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Core/BaseDataView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/DifficultySelectDialog.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UISystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/User/IUserSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/User/UserData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/User/UserSystem.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -106,13 +146,15 @@
       <option name="useMixedMode" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="43652">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="43652" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
-        <list />
+        <list>
+          <MonoRuntime />
+        </list>
       </option>
       <option name="selectedOptions">
         <list />
@@ -134,6 +176,10 @@
       <workItem from="1760987069908" duration="4670000" />
       <workItem from="1761052487900" duration="8484000" />
       <workItem from="1761115153004" duration="10475000" />
+      <workItem from="1761129329464" duration="3762000" />
+      <workItem from="1761151897469" duration="3346000" />
+      <workItem from="1761313914118" duration="4703000" />
+      <workItem from="1761329999301" duration="2051000" />
     </task>
     <servers />
   </component>
@@ -167,93 +213,51 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/PublicAPI/Monetization.cs</url>
-          <line>137</line>
-          <properties documentPath="$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/API/Monetization.cs" containingFunctionPresentation="Method 'ShowRewardedAds'">
-            <startOffsets>
-              <option value="5969" />
-            </startOffsets>
-            <endOffsets>
-              <option value="5986" />
-            </endOffsets>
-          </properties>
+          <line>139</line>
+          <properties documentPath="$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/API/Monetization.cs" containingFunctionPresentation="Method 'ShowRewardedAds'" />
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/PublicAPI/Monetization.cs</url>
-          <line>149</line>
-          <properties documentPath="$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/API/Monetization.cs" containingFunctionPresentation="Method 'ShowRewardedAds'">
-            <startOffsets>
-              <option value="6253" />
-            </startOffsets>
-            <endOffsets>
-              <option value="6307" />
-            </endOffsets>
-          </properties>
+          <line>151</line>
+          <properties documentPath="$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/API/Monetization.cs" containingFunctionPresentation="Method 'ShowRewardedAds'" />
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/UI/DifficultySelectDialog.cs</url>
-          <line>61</line>
+          <line>62</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/UI/DifficultySelectDialog.cs" containingFunctionPresentation="Method 'UnlockLevel'">
             <startOffsets>
-              <option value="2402" />
+              <option value="2383" />
             </startOffsets>
             <endOffsets>
-              <option value="2494" />
+              <option value="2475" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/PublicAPI/Monetization.cs</url>
-          <line>120</line>
-          <properties documentPath="$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/API/Monetization.cs" containingFunctionPresentation="Method 'IsAdsReady'">
-            <startOffsets>
-              <option value="5224" />
-            </startOffsets>
-            <endOffsets>
-              <option value="5241" />
-            </endOffsets>
-          </properties>
+          <line>122</line>
+          <properties documentPath="$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/API/Monetization.cs" containingFunctionPresentation="Method 'IsAdsReady'" />
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/PublicAPI/Monetization.cs</url>
-          <line>126</line>
-          <properties documentPath="$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/API/Monetization.cs" containingFunctionPresentation="Method 'IsAdsReady'">
-            <startOffsets>
-              <option value="5381" />
-            </startOffsets>
-            <endOffsets>
-              <option value="5406" />
-            </endOffsets>
-          </properties>
+          <line>128</line>
+          <properties documentPath="$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/API/Monetization.cs" containingFunctionPresentation="Method 'IsAdsReady'" />
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/Internal/Platform/Editor/EditorMonetizationSDK.cs</url>
-          <line>105</line>
-          <properties documentPath="$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/Platform/Editor/EditorMonetizationSDK.cs" containingFunctionPresentation="Method 'ShowRewardedAds'">
-            <startOffsets>
-              <option value="4302" />
-            </startOffsets>
-            <endOffsets>
-              <option value="4303" />
-            </endOffsets>
-          </properties>
+          <url>file://$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs</url>
+          <line>103</line>
+          <properties documentPath="$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/Platform/Editor/EditorMonetizationSDK.cs" containingFunctionPresentation="Method 'ShowRewardedAds'" />
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/Internal/AdsPlayer.cs</url>
+          <url>file://$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/PublicAPI/Internal/AdsPlayer.cs</url>
           <line>52</line>
-          <properties documentPath="$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/Assets/Scripts/AdsPlayer.cs" containingFunctionPresentation="Method 'OnVideoEnded'">
-            <startOffsets>
-              <option value="1439" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1462" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/Assets/Scripts/AdsPlayer.cs" containingFunctionPresentation="Method 'OnVideoEnded'" />
           <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
@@ -270,16 +274,9 @@
           <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/Internal/AdsPlayer.cs</url>
+          <url>file://$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/PublicAPI/Internal/AdsPlayer.cs</url>
           <line>60</line>
-          <properties documentPath="$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/Assets/Scripts/AdsPlayer.cs" containingFunctionPresentation="Method 'OnPrepared'">
-            <startOffsets>
-              <option value="1657" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1672" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/Assets/Scripts/AdsPlayer.cs" containingFunctionPresentation="Method 'OnPrepared'" />
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
@@ -287,52 +284,353 @@
           <line>61</line>
           <properties documentPath="$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Editor/MonetizationEditorWindow.cs" containingFunctionPresentation="Method 'SaveToFile'">
             <startOffsets>
-              <option value="1710" />
+              <option value="1720" />
             </startOffsets>
             <endOffsets>
-              <option value="1749" />
+              <option value="1759" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/PublicAPI/Monetization.cs</url>
-          <line>56</line>
-          <properties documentPath="$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/API/Monetization.cs" containingFunctionPresentation="Method 'Initialize'">
-            <startOffsets>
-              <option value="2358" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2386" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="51" />
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@35686256cd69/Tests/EditMode/MonetizationEditorTests.cs</url>
+          <line>24</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@35686256cd69/Tests/EditMode/MonetizationEditorTests.cs" containingFunctionPresentation="Method 'InitializationComplete'" />
+          <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/PublicAPI/Monetization.cs</url>
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@35686256cd69/Tests/EditMode/MonetizationEditorTests.cs</url>
+          <line>38</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@35686256cd69/Tests/EditMode/MonetizationEditorTests.cs" containingFunctionPresentation="Method 'InitializationComplete'" />
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@35686256cd69/Tests/EditMode/MonetizationEditorTests.cs</url>
+          <line>41</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@35686256cd69/Tests/EditMode/MonetizationEditorTests.cs" containingFunctionPresentation="Method 'InitializationComplete'" />
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@36c6a0995e78/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs</url>
+          <line>35</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@36c6a0995e78/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs" containingFunctionPresentation="Method 'Initialize'" />
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@36c6a0995e78/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs</url>
+          <line>162</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@36c6a0995e78/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs" containingFunctionPresentation="Method 'InitializeInternal'" />
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@36c6a0995e78/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs</url>
+          <line>195</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@36c6a0995e78/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs" containingFunctionPresentation="Method 'InitializeInternal'" />
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@36c6a0995e78/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs</url>
+          <line>171</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@36c6a0995e78/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs" containingFunctionPresentation="Method 'InitializeInternal'" />
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@36c6a0995e78/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs</url>
+          <line>179</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@36c6a0995e78/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs" containingFunctionPresentation="Method 'InitializeInternal'" />
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@36c6a0995e78/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs</url>
+          <line>166</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@36c6a0995e78/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs" containingFunctionPresentation="Method 'InitializeInternal'" />
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@36c6a0995e78/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs</url>
+          <line>186</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@36c6a0995e78/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs" containingFunctionPresentation="Method 'InitializeInternal'" />
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@36c6a0995e78/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs</url>
+          <line>182</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@36c6a0995e78/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs" containingFunctionPresentation="Method 'InitializeInternal'" />
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@c733699a5a00/Tests/EditMode/MonetizationEditorTests.cs</url>
+          <line>24</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@c733699a5a00/Tests/EditMode/MonetizationEditorTests.cs" containingFunctionPresentation="Method 'InitializationComplete'" />
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@c733699a5a00/Tests/EditMode/MonetizationEditorTests.cs</url>
+          <line>27</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@c733699a5a00/Tests/EditMode/MonetizationEditorTests.cs" containingFunctionPresentation="Method 'InitializationComplete'" />
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@c733699a5a00/Runtime/PublicAPI/Monetization.cs</url>
+          <line>35</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@c733699a5a00/Runtime/PublicAPI/Monetization.cs" containingFunctionPresentation="Method 'Initialize'" />
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@c733699a5a00/Runtime/PublicAPI/Monetization.cs</url>
+          <line>36</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@c733699a5a00/Runtime/PublicAPI/Monetization.cs" containingFunctionPresentation="Method 'Initialize'" />
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@c733699a5a00/Runtime/PublicAPI/Monetization.cs</url>
+          <line>42</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@c733699a5a00/Runtime/PublicAPI/Monetization.cs" containingFunctionPresentation="Method 'Initialize'" />
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@c733699a5a00/Runtime/PublicAPI/Monetization.cs</url>
+          <line>44</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@c733699a5a00/Runtime/PublicAPI/Monetization.cs" containingFunctionPresentation="Method 'Initialize'" />
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@c733699a5a00/Runtime/PublicAPI/Monetization.cs</url>
+          <line>51</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@c733699a5a00/Runtime/PublicAPI/Monetization.cs" containingFunctionPresentation="Method 'Initialize'" />
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@c733699a5a00/Runtime/PublicAPI/Monetization.cs</url>
+          <line>58</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@c733699a5a00/Runtime/PublicAPI/Monetization.cs" containingFunctionPresentation="Method 'Initialize'" />
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@c733699a5a00/Runtime/PublicAPI/Monetization.cs</url>
+          <line>60</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@c733699a5a00/Runtime/PublicAPI/Monetization.cs" containingFunctionPresentation="Method 'Initialize'" />
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@c733699a5a00/Tests/EditMode/MonetizationEditorTests.cs</url>
+          <line>41</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@c733699a5a00/Tests/EditMode/MonetizationEditorTests.cs" containingFunctionPresentation="Method 'InitializationComplete'" />
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@c733699a5a00/Tests/EditMode/MonetizationEditorTests.cs</url>
+          <line>29</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@c733699a5a00/Tests/EditMode/MonetizationEditorTests.cs" containingFunctionPresentation="Lambda expression inside Method 'InitializationComplete'" />
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@c733699a5a00/Tests/EditMode/MonetizationEditorTests.cs</url>
           <line>33</line>
-          <properties documentPath="$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/API/Monetization.cs" containingFunctionPresentation="Method 'Initialize'">
-            <startOffsets>
-              <option value="1506" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1565" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="52" />
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@c733699a5a00/Tests/EditMode/MonetizationEditorTests.cs" containingFunctionPresentation="Lambda expression inside Method 'InitializationComplete'" />
+          <option name="timeStamp" value="83" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/PublicAPI/Monetization.cs</url>
-          <line>34</line>
-          <properties documentPath="$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/API/Monetization.cs" containingFunctionPresentation="Method 'Initialize'">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@c733699a5a00/Runtime/PublicAPI/Monetization.cs</url>
+          <line>38</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@c733699a5a00/Runtime/PublicAPI/Monetization.cs" containingFunctionPresentation="Method 'Initialize'" />
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@c733699a5a00/Runtime/PublicAPI/Monetization.cs</url>
+          <line>53</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@c733699a5a00/Runtime/PublicAPI/Monetization.cs" containingFunctionPresentation="Method 'Initialize'" />
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@865fd66f970d/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs</url>
+          <line>162</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@865fd66f970d/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs" containingFunctionPresentation="Method 'InitializeInternal'" />
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@865fd66f970d/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs</url>
+          <line>164</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@865fd66f970d/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs" containingFunctionPresentation="Method 'InitializeInternal'" />
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@865fd66f970d/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs</url>
+          <line>171</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@865fd66f970d/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs" containingFunctionPresentation="Method 'InitializeInternal'" />
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@865fd66f970d/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs</url>
+          <line>172</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@865fd66f970d/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs" containingFunctionPresentation="Method 'InitializeInternal'" />
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@8dc8b0128c25/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs</url>
+          <line>65</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@8dc8b0128c25/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs" containingFunctionPresentation="Method 'LoadAds'" />
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@8dc8b0128c25/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs</url>
+          <line>164</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@8dc8b0128c25/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs" containingFunctionPresentation="Method 'LoadAdsInternal'" />
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@8dc8b0128c25/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs</url>
+          <line>166</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@8dc8b0128c25/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs" containingFunctionPresentation="Method 'LoadAdsInternal'" />
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@8dc8b0128c25/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs</url>
+          <line>171</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@8dc8b0128c25/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs" containingFunctionPresentation="Method 'LoadAdsInternal'" />
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@8dc8b0128c25/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs</url>
+          <line>173</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@8dc8b0128c25/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs" containingFunctionPresentation="Method 'LoadAdsInternal'" />
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@8dc8b0128c25/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs</url>
+          <line>175</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@8dc8b0128c25/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs" containingFunctionPresentation="Method 'LoadAdsInternal'" />
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@8dc8b0128c25/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs</url>
+          <line>182</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@8dc8b0128c25/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs" containingFunctionPresentation="Method 'LoadAdsInternal'" />
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@8dc8b0128c25/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs</url>
+          <line>183</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@8dc8b0128c25/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs" containingFunctionPresentation="Method 'LoadAdsInternal'" />
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@8dc8b0128c25/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs</url>
+          <line>185</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@8dc8b0128c25/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs" containingFunctionPresentation="Method 'LoadAdsInternal'" />
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@8dc8b0128c25/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs</url>
+          <line>187</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@8dc8b0128c25/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs" containingFunctionPresentation="Method 'LoadAdsInternal'" />
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@8dc8b0128c25/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs</url>
+          <line>192</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@8dc8b0128c25/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs" containingFunctionPresentation="Method 'LoadAdsInternal'" />
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@8dc8b0128c25/Runtime/PublicAPI/Internal/AdsPlayer.cs</url>
+          <line>28</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@8dc8b0128c25/Runtime/PublicAPI/Internal/AdsPlayer.cs" containingFunctionPresentation="Method 'Prepare'" />
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@c7573eb11b81/Runtime/PublicAPI/Monetization.cs</url>
+          <line>103</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@c7573eb11b81/Runtime/PublicAPI/Monetization.cs" containingFunctionPresentation="Method 'LoadAds'" />
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@ff8845da76f0/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs</url>
+          <line>189</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@ff8845da76f0/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs" containingFunctionPresentation="Method 'LoadAdsInternal'" />
+          <option name="timeStamp" value="115" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@ff8845da76f0/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs</url>
+          <line>192</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@ff8845da76f0/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs" containingFunctionPresentation="Method 'LoadAdsInternal'" />
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@ff8845da76f0/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs</url>
+          <line>187</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@ff8845da76f0/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs" containingFunctionPresentation="Method 'LoadAdsInternal'" />
+          <option name="timeStamp" value="117" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@ff8845da76f0/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs</url>
+          <line>185</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@ff8845da76f0/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs" containingFunctionPresentation="Method 'LoadAdsInternal'" />
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@ff8845da76f0/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs</url>
+          <line>182</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@ff8845da76f0/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs" containingFunctionPresentation="Method 'LoadAdsInternal'" />
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@ff8845da76f0/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs</url>
+          <line>171</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.voodoo.sdk@ff8845da76f0/Runtime/PublicAPI/Internal/Platform/Editor/EditorMonetizationSDK.cs" containingFunctionPresentation="Method 'LoadAdsInternal'" />
+          <option name="timeStamp" value="120" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/AppLoader.cs</url>
+          <line>21</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/AppLoader.cs" containingFunctionPresentation="Method 'LoadApp'">
             <startOffsets>
-              <option value="1578" />
+              <option value="474" />
             </startOffsets>
             <endOffsets>
-              <option value="1601" />
+              <option value="522" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="53" />
+          <option name="timeStamp" value="121" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/AppLoader.cs</url>
+          <line>20</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/AppLoader.cs" containingFunctionPresentation="Method 'LoadApp'">
+            <startOffsets>
+              <option value="417" />
+            </startOffsets>
+            <endOffsets>
+              <option value="465" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/AppLoader.cs</url>
+          <line>14</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/AppLoader.cs" containingFunctionPresentation="Method 'Start'">
+            <startOffsets>
+              <option value="349" />
+            </startOffsets>
+            <endOffsets>
+              <option value="359" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/AppLoader.cs</url>
+          <line>13</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/AppLoader.cs" containingFunctionPresentation="Method 'Start'">
+            <startOffsets>
+              <option value="294" />
+            </startOffsets>
+            <endOffsets>
+              <option value="340" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="127" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

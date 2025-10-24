@@ -5,5 +5,6 @@ namespace Events
         public static readonly string OnTimeUpdated = nameof(OnTimeUpdated);
         public static readonly string OnPlayerDistanceUpdated = nameof(OnPlayerDistanceUpdated);
         public static readonly string OnTargetReached = nameof(OnTargetReached);
+        public static readonly string OnOpenDifficultyLevel = nameof(OnOpenDifficultyLevel);
     }
 }

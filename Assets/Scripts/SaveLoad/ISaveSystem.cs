@@ -1,11 +1,10 @@
-using Game;
 using Game.Level;
 using Infrastructure;
 using User;
 
 namespace SaveLoad
 {
-    public interface ISaveSystem : ISystem
+    public interface ISaveSystem
     {
         void SaveCompletedLevel(LevelResultData levelResult);
         public AchievementsData LoadLevelsStat();

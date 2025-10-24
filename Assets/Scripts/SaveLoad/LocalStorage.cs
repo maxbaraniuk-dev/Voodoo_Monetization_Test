@@ -16,7 +16,7 @@ namespace SaveLoad
         {
             if (!PlayerPrefs.HasKey(key))
             {
-                Context.GetSystem<ILog>().Debug(() => $"Key {key} not found");
+                Debug.LogError($"Key {key} not found");
                 return default;
             }
 
@@ -24,7 +24,7 @@ namespace SaveLoad
             
             var data = JsonUtility.FromJson<T>(json);
             if (data == null)
-                Context.GetSystem<ILog>().Error(() => $"Failed to load {key}");
+                Debug.LogError($"Failed to load {key}");
             
             return JsonUtility.FromJson<T>(json);
         }

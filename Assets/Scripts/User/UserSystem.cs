@@ -1,21 +1,25 @@
+using Events;
 using Game.Level;
 using Infrastructure;
 using SaveLoad;
 using UnityEngine;
+using Zenject;
 
 namespace User
 {
-    public class UserSystem : MonoBehaviour, IUserSystem
+    public class UserSystem : IUserSystem, ISystem
     {
+        [Inject] ISaveSystem _saveSystem;
         private UserData _userData;
         public void Initialize()
         {
-            _userData = Context.GetSystem<ISaveSystem>().LoadUserData();
+            _userData = _saveSystem.LoadUserData();
+            EventsMap.Subscribe<DifficultyLevel>(GameEvents.OnOpenDifficultyLevel, OpenDifficultyLevel);
         }
    
         public void Dispose()
         {
-            Voodoo.Monetization.Dispose();
+            EventsMap.Unsubscribe<DifficultyLevel>(GameEvents.OnOpenDifficultyLevel, OpenDifficultyLevel);
         }
 
         public UserData GetUserData()
@@ -25,13 +29,13 @@ namespace User
 
         public void SaveUserData()
         {
-            Context.GetSystem<ISaveSystem>().SaveUserData(_userData);
+            _saveSystem.SaveUserData(_userData);
         }
 
         public void OpenDifficultyLevel(DifficultyLevel difficultyLevel)
         {
             _userData.openedLevels.Find(state => state.difficultyLevel == difficultyLevel).isOpened = true;
-            Context.GetSystem<ISaveSystem>().SaveUserData(_userData);
+            _saveSystem.SaveUserData(_userData);
         }
     }
 }

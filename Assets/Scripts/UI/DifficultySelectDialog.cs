@@ -9,7 +9,7 @@ using User;
 
 namespace UI
 {
-    public class DifficultySelectDialog : BaseView
+    public class DifficultySelectDialog : BaseDataView<List<LevelState>>
     {
         [SerializeField] private Button playButton;
         [SerializeField] private Button unlockButton;
@@ -22,9 +22,9 @@ namespace UI
         private DifficultyLevel _difficultyLevel;
         private List<LevelState> _openedDifficulties;
         
-        public override void Show()
+        public override void Show(List<LevelState> difficulties)
         {
-            _openedDifficulties = Context.GetSystem<IUserSystem>().GetUserData().openedLevels;
+            _openedDifficulties = difficulties;
             _difficultyToggles.Add(easyToggle, DifficultyLevel.Easy);
             _difficultyToggles.Add(mediumToggle, DifficultyLevel.Medium);
             _difficultyToggles.Add(hardToggle, DifficultyLevel.Hard);
@@ -63,7 +63,7 @@ namespace UI
             _openedDifficulties.Find(state => state.difficultyLevel == difficultyLevel).isOpened = true;
             playButton.gameObject.SetActive(_openedDifficulties.Find(state => state.difficultyLevel == _difficultyLevel).isOpened);
             unlockButton.gameObject.SetActive(!_openedDifficulties.Find(state => state.difficultyLevel == _difficultyLevel).isOpened);
-            Context.GetSystem<IUserSystem>().OpenDifficultyLevel(difficultyLevel);
+            EventsMap.Dispatch(GameEvents.OnOpenDifficultyLevel, difficultyLevel);
         }
     }
 }

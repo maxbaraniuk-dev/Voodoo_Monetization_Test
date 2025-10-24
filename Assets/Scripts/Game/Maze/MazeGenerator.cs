@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
-using System.Numerics;
-using Infrastructure;
-using Logs;
+using UnityEngine;
+using Random = System.Random;
+using Vector2 = System.Numerics.Vector2;
 
 namespace Game.Maze
 {
@@ -134,7 +134,7 @@ namespace Game.Maze
         {
             if (grid == null)
             {
-                Context.GetSystem<ILog>().Error(() => "Grid is null");
+                Debug.LogError("Grid is null");
                 return Vector2.Zero;
             }
             
