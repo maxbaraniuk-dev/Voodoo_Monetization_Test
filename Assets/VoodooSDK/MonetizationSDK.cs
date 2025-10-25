@@ -3,7 +3,6 @@ using System.Linq;
 using System.Text;
 using Cysharp.Threading.Tasks;
 using Newtonsoft.Json;
-using UnityEngine;
 using UnityEngine.Networking;
 using User;
 using VoodooSDK.Core;
@@ -16,9 +15,17 @@ namespace VoodooSDK
 {
     public static class MonetizationSDK
     {
+        private const string LoginUrl = "https://th7bmd6lomsrpelxp3p7k4u34a0smwap.lambda-url.us-east-1.on.aws/";
+        private const string UserStateUrl = "https://v2hah3mjyak4neneqhzyvotdpa0xpxnw.lambda-url.us-east-1.on.aws/";
+        private const string AllOffersUrl = "https://gzrx4avbixaqryao7paoi7szt40dxddu.lambda-url.us-east-1.on.aws/";
+        private const string PurchaseOfferUrl = "https://b2zumfx3g3orvwxy34r3crx3ye0xalnm.lambda-url.us-east-1.on.aws/";
+        private const string AllStorePackagesUrl = "https://ornjmxpww64x6jkt27bf7jkcmm0fkgcd.lambda-url.us-east-1.on.aws/";
+        private const string PurchasePackageUrl = "https://fwmo4m5zraasmingcwb4ktzkni0saetz.lambda-url.us-east-1.on.aws/";
+        
         private static string _authToken;
         
         //Server API
+        
         
         public static async UniTask<Result<Empty>> AuthenticateUser(string userId)
         {
@@ -26,7 +33,7 @@ namespace VoodooSDK
             {
                 userId = userId
             };
-            var response = await SendRequest<AuthResponse>(ApiUrls.Login, RequestMethodType.Post, authRequest);
+            var response = await SendRequest<AuthResponse>(LoginUrl, RequestMethodType.Post, authRequest);
             if (!response.Success)
                 return Result<Empty>.FailedResult(response.Message);
 
@@ -39,7 +46,7 @@ namespace VoodooSDK
         
         public static async UniTask<Result<UserData>> GetUserState()
         {
-            var response = await SendRequest<UserData>(ApiUrls.UserState);
+            var response = await SendRequest<UserData>(UserStateUrl);
             if (!response.Success)
                 return Result<UserData>.FailedResult(response.Message);
 
@@ -50,7 +57,7 @@ namespace VoodooSDK
         
         public static async UniTask<Result<List<BaseOffer>>> GetAllOffers()
         {
-            var response = await SendRequest<OffersResponse>(ApiUrls.AllOffers);
+            var response = await SendRequest<OffersResponse>(AllOffersUrl);
             if (!response.Success)
                 return Result<List<BaseOffer>>.FailedResult(response.Message);
 
@@ -67,14 +74,13 @@ namespace VoodooSDK
             {
                 offerId = purchaseItemId
             };
-            var response = await SendRequest<PurchaseItem>(ApiUrls.PurchaseOffer, RequestMethodType.Post, requestData);
-            if (!response.Success)
-                return Result<PurchaseItem>.FailedResult(response.Message);
-            
-            return Result<PurchaseItem>.SuccessResult(response.Payload);
+            var response = await SendRequest<PurchaseItem>(PurchaseOfferUrl, RequestMethodType.Post, requestData);
+            return !response.Success ? Result<PurchaseItem>.FailedResult(response.Message) : Result<PurchaseItem>.SuccessResult(response.Payload);
         }
         
+        
         //Store API
+        
         
         public static async UniTask<Result<StorePackage>> PurchasePackage(string packageId)
         {
@@ -82,25 +88,19 @@ namespace VoodooSDK
             {
                 packageId = packageId
             };
-            var response = await SendRequest<StorePackage>(ApiUrls.PurchasePackage, RequestMethodType.Post, requestData);
-            if (!response.Success)
-                return Result<StorePackage>.FailedResult(response.Message);
-            
-            return Result<StorePackage>.SuccessResult(response.Payload);
+            var response = await SendRequest<StorePackage>(PurchasePackageUrl, RequestMethodType.Post, requestData);
+            return !response.Success ? Result<StorePackage>.FailedResult(response.Message) : Result<StorePackage>.SuccessResult(response.Payload);
         }
         
         public static async UniTask<Result<List<StorePackage>>> GetStorePackages()
         {
-            var response = await SendRequest<StorePackagesResponse>(ApiUrls.AllStorePackages);
+            var response = await SendRequest<StorePackagesResponse>(AllStorePackagesUrl);
             if (!response.Success)
                 return Result<List<StorePackage>>.FailedResult(response.Message);
             
             var packages = response.Payload.packages;
             
-            if (packages == null)
-                return Result<List<StorePackage>>.FailedResult("Packages are empty");
-            
-            return Result<List<StorePackage>>.SuccessResult(packages);
+            return packages == null ? Result<List<StorePackage>>.FailedResult("Packages are empty") : Result<List<StorePackage>>.SuccessResult(packages);
         }
         
         private static async UniTask<Result<T>> SendRequest<T>(string url, RequestMethodType methodType = RequestMethodType.Get, object requestData = null)
@@ -129,59 +129,6 @@ namespace VoodooSDK
                 default:
                     return Result<T>.FailedResult($"Errormessage: {request.error}, Error code: {request.responseCode}");
             }
-        }
-        
-        public static void GenerateStorePackagesResponse()
-        {
-            var data = new StorePackagesResponse
-            {
-                packages = new List<StorePackage>
-                {
-                    new StorePackage()
-                    {
-                        id = "com.purchasable.1",
-                        price = 1,
-                        currency = "USD",
-                        receipt = "123456789"
-                    },
-                    new StorePackage()
-                    {
-                        id = "com.purchasable.10",
-                        price = 10,
-                        currency = "USD",
-                        receipt = "123456789"
-                    }
-                }
-            };
-            
-            var json = JsonConvert.SerializeObject(data);
-            Debug.Log(json);
-        }
-        
-        public static void GeneratePurchaseItem()
-        {
-            var data = new PurchaseItem
-            {
-                packageId = "com.purchasable.1",
-                isFree = false,
-                purchased = true,
-                rewards = new List<Reward>()
-                {
-                    new()
-                    {
-                        type = RewardType.Coins,
-                        value = 1000
-                    },
-                    new()
-                    {
-                        type = RewardType.Stars,
-                        value = 5
-                    }
-                }
-            };
-            
-            var json = JsonConvert.SerializeObject(data);
-            Debug.Log(json);
         }
     }
 }

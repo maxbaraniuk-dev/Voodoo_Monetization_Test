@@ -1,6 +1,9 @@
+using Events;
+using Infrastructure;
+using UnityEngine;
 using Zenject;
 
-namespace Infrastructure
+namespace Context
 {
     public class AppContext : IAppContext, ISystem
     {
@@ -11,11 +14,17 @@ namespace Infrastructure
         public void Initialize()
         {
             AppStateMachine = new AppStateMachine(_diContainer);
+            EventsMap.Subscribe(UIEvents.OnErrorConfirm, AppQuit);
+        }
+
+        private void AppQuit()
+        {
+            Application.Quit();
         }
 
         public void Dispose()
         {
-            
+            EventsMap.Unsubscribe(UIEvents.OnErrorConfirm, AppQuit);
         }
     }
 }

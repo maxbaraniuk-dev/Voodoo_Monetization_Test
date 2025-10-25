@@ -8,6 +8,7 @@ namespace Events
         public static readonly string OnStartNewGame = nameof(OnStartNewGame);
         public static readonly string OnCloseView = nameof(OnCloseView);
         public static readonly string OnBackToMenu = nameof(OnBackToMenu);
+        public static readonly string OnErrorConfirm = nameof(OnErrorConfirm);
         
     }
 }

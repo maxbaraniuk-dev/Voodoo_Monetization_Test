@@ -4,6 +4,7 @@ using System.Linq;
 using Cysharp.Threading.Tasks;
 using Events;
 using Infrastructure;
+using Logs;
 using Store;
 using UI;
 using User;
@@ -19,6 +20,7 @@ namespace Offers
         [Inject] private IStore _store;
         [Inject] private IUISystem _uiSystem;
         [Inject] private IUserSystem _userSystem;
+        [Inject] private ILog _log;
         private List<BaseOffer> _offers;
         public void Initialize()
         {
@@ -34,11 +36,14 @@ namespace Offers
 
         public async UniTask<Result> LoadOffers()
         {
-            var res = await MonetizationSDK.GetAllOffers();
-            if (!res.Success)
-                return Result.FailedResult(res.Message);
+            var offersResult = await MonetizationSDK.GetAllOffers();
+            if (!offersResult.Success)
+                return Result.FailedResult(offersResult.Message);
             
-            _offers = res.Payload;
+            if (offersResult.Payload == null)
+                return Result.FailedResult("Offers are empty");
+            
+            _offers = offersResult.Payload;
             return Result.SuccessResult();
         }
 
@@ -53,7 +58,7 @@ namespace Offers
         
         private void OnPurchaseOfferItem(PurchaseItem item)
         {
-            PurchaseOfferItem(item).Forget();
+            Purchase(item).Forget();
         }
         
         private void ShowOffer(BaseOffer offer)
@@ -73,6 +78,17 @@ namespace Offers
                 default:
                     throw new ArgumentOutOfRangeException();
             }
+        }
+
+        private async UniTask Purchase(PurchaseItem item)
+        {
+            var purchaseResult = await PurchaseOfferItem(item);
+            if (purchaseResult.Success)
+                _log.Debug(() => "Purchase complete");
+            else
+                _log.Error(() => $"Purchase error. {purchaseResult.Message}");
+            
+            _uiSystem.ShowView<PurchaseResultPopup, Result>(purchaseResult);
         }
 
         private async UniTask<Result> PurchaseOfferItem(PurchaseItem item)
