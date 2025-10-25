@@ -8,6 +8,7 @@ using Logs;
 using SaveLoad;
 using UI;
 using UnityEngine;
+using VoodooSDK.Game.Offers;
 using Zenject;
 
 namespace Game
@@ -37,7 +38,7 @@ namespace Game
 
         public void StartNewGame(DifficultyLevel difficultyLevel)
         {
-            EventsMap.Subscribe<float>(GameEvents.OnTargetReached, OnTargetReached);
+            EventsMap.Subscribe<float>(GameEvents.TargetReached, OnTargetReached);
             _isTargetReached = false;
             _passedTime = 0;
             _difficultyLevel = difficultyLevel;
@@ -48,11 +49,13 @@ namespace Game
             _gameBackground = Object.Instantiate(_gameConfig.gameBackground);
             StartUpdateTimer().Forget();
             _isGameStarted = true;
+            
+            EventsMap.Dispatch(GameEvents.OfferTrigger, OfferTrigger.StartGame);
         }
 
         public void ExitGame()
         {
-            EventsMap.Unsubscribe<float>(GameEvents.OnTargetReached, OnTargetReached);
+            EventsMap.Unsubscribe<float>(GameEvents.TargetReached, OnTargetReached);
             _isGameStarted = false;
             Object.Destroy(_maze);
             Object.Destroy(_playerController.gameObject);
@@ -65,7 +68,7 @@ namespace Game
             {
                 await UniTask.NextFrame();
                 _passedTime += Time.deltaTime;
-                EventsMap.Dispatch(GameEvents.OnTimeUpdated, _passedTime);
+                EventsMap.Dispatch(GameEvents.TimeUpdated, _passedTime);
             }
         }
 
@@ -82,6 +85,8 @@ namespace Game
             await UniTask.WaitUntil(() => complete);
             
             _uiSystem.CloseView<GameUI>();
+            
+            EventsMap.Dispatch(GameEvents.OfferTrigger, OfferTrigger.WinGame);
             var levelResultData = new LevelResultData
             {
                 difficultyLevel = _difficultyLevel,

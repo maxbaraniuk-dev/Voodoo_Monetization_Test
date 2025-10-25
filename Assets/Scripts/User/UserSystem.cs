@@ -1,25 +1,40 @@
+using System;
+using Cysharp.Threading.Tasks;
 using Events;
+using Game;
 using Game.Level;
 using Infrastructure;
-using SaveLoad;
-using UnityEngine;
+using UI;
+using VoodooSDK;
+using VoodooSDK.Game.Offers;
+using VoodooSDK.Game.Purchasables;
 using Zenject;
 
 namespace User
 {
     public class UserSystem : IUserSystem, ISystem
     {
-        [Inject] ISaveSystem _saveSystem;
+        [Inject] GameConfig _gameConfig;
+        [Inject] IUISystem _uiSystem;
         private UserData _userData;
         public void Initialize()
         {
-            _userData = _saveSystem.LoadUserData();
-            EventsMap.Subscribe<DifficultyLevel>(GameEvents.OnOpenDifficultyLevel, OpenDifficultyLevel);
+            EventsMap.Subscribe<DifficultyLevel>(GameEvents.TryUnlockDifficultyLevel, TryUnlockDifficultyLevel);
         }
    
         public void Dispose()
         {
-            EventsMap.Unsubscribe<DifficultyLevel>(GameEvents.OnOpenDifficultyLevel, OpenDifficultyLevel);
+            EventsMap.Unsubscribe<DifficultyLevel>(GameEvents.TryUnlockDifficultyLevel, TryUnlockDifficultyLevel);
+        }
+
+        public async UniTask<Result> LoadUserData()
+        {
+            var result = await MonetizationSDK.GetUserState();
+            if (!result.Success)
+                return Result.FailedResult(result.Message);
+            
+            _userData = result.Payload;
+            return Result.SuccessResult();
         }
 
         public UserData GetUserData()
@@ -27,15 +42,37 @@ namespace User
             return _userData;
         }
 
-        public void SaveUserData()
+        public void AddReward(Reward reward)
         {
-            _saveSystem.SaveUserData(_userData);
+            switch (reward.type)
+            {
+                case RewardType.Coins:
+                    _userData.coins += reward.value;
+                    break;
+                case RewardType.Stars:
+                    _userData.stars += reward.value;
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
         }
 
-        public void OpenDifficultyLevel(DifficultyLevel difficultyLevel)
+        public void TryUnlockDifficultyLevel(DifficultyLevel difficultyLevel)
         {
+            if (_userData.stars < _gameConfig.upLockLevelsStarsCost || _userData.coins < _gameConfig.upLockLevelsCoinsCost)
+                EventsMap.Dispatch(GameEvents.OfferTrigger, OfferTrigger.OutOfResources);
+            else
+                UnlockLevel(difficultyLevel);
+        }
+        
+        void UnlockLevel(DifficultyLevel difficultyLevel)
+        {
+            _userData.stars -= _gameConfig.upLockLevelsStarsCost;
+            _userData.coins -= _gameConfig.upLockLevelsCoinsCost;
+            
             _userData.openedLevels.Find(state => state.difficultyLevel == difficultyLevel).isOpened = true;
-            _saveSystem.SaveUserData(_userData);
+            _uiSystem.GetView<DifficultySelectDialog>().UpdateView(_userData.openedLevels);
+            _uiSystem.GetView<LobbyView>().UpdateView(_userData);
         }
     }
 }

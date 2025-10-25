@@ -28,16 +28,21 @@ namespace UI
         
         public T ShowView<T>(Transform parent = null) where T : BaseView
         {
-            var view = CreateView<T>(parent);
+            var view = GetView<T>(parent);
             view.Show();
             return view;
         }
         
         public T ShowView<T, Tp>(Tp viewModel, Transform parent = null) where T : BaseDataView<Tp>
         {
-            var view = CreateView<T>(parent);
+            var view = GetView<T>(parent);
             view.Show(viewModel);
             return view;
+        }
+
+        public T GetView<T>() where T : BaseView
+        {
+            return _openedViews.FirstOrDefault(view => view is T) as T;
         }
 
         public void CloseView<T>() where T : BaseView
@@ -58,7 +63,7 @@ namespace UI
              Object.Destroy(view.gameObject);
         }
         
-        private T CreateView<T>(Transform parent = null) where T : BaseView
+        private T GetView<T>(Transform parent = null) where T : BaseView
         {
             var openedView = _openedViews.FirstOrDefault(view => view is T);
             if (openedView != null) 

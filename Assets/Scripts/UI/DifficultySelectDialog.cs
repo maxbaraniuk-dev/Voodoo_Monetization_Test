@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using Events;
 using Game.Level;
-using Infrastructure;
 using UI.Core;
 using UnityEngine;
 using UnityEngine.UI;
@@ -33,18 +32,21 @@ namespace UI
                 activeToggle.onValueChanged.AddListener(_ => OnToggleValueChanged(activeToggle));
             
             easyToggle.isOn = true;
-            unlockButton.interactable = false;
             playButton.onClick.AddListener(OnStartGame);
             unlockButton.onClick.AddListener(OnUnlockLevelClick);
-            
-            Voodoo.Monetization.LoadAds(()=> unlockButton.interactable = true, null);
+            UpdateButtons();
+        }
+
+        public override void UpdateView(List<LevelState> difficulties)
+        {
+            _openedDifficulties = difficulties;
+            UpdateButtons();
         }
 
         private void OnToggleValueChanged(Toggle toggle)
         {
             _difficultyLevel = _difficultyToggles[toggle];
-            playButton.gameObject.SetActive(_openedDifficulties.Find(state => state.difficultyLevel == _difficultyLevel).isOpened);
-            unlockButton.gameObject.SetActive(!_openedDifficulties.Find(state => state.difficultyLevel == _difficultyLevel).isOpened);
+            UpdateButtons();
         }
         
         private void OnStartGame()
@@ -55,15 +57,19 @@ namespace UI
 
         private void OnUnlockLevelClick()
         {
-            Voodoo.Monetization.ShowRewardedAds(()=> UnlockLevel(_difficultyLevel), null, null);
+            EventsMap.Dispatch(GameEvents.TryUnlockDifficultyLevel, _difficultyLevel);
         } 
 
         private void UnlockLevel(DifficultyLevel difficultyLevel)
         {
             _openedDifficulties.Find(state => state.difficultyLevel == difficultyLevel).isOpened = true;
+            UpdateButtons();
+        }
+        
+        private void UpdateButtons()
+        {
             playButton.gameObject.SetActive(_openedDifficulties.Find(state => state.difficultyLevel == _difficultyLevel).isOpened);
             unlockButton.gameObject.SetActive(!_openedDifficulties.Find(state => state.difficultyLevel == _difficultyLevel).isOpened);
-            EventsMap.Dispatch(GameEvents.OnOpenDifficultyLevel, difficultyLevel);
         }
     }
 }

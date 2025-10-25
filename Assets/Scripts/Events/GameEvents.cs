@@ -2,9 +2,11 @@ namespace Events
 {
     public abstract class GameEvents
     {
-        public static readonly string OnTimeUpdated = nameof(OnTimeUpdated);
-        public static readonly string OnPlayerDistanceUpdated = nameof(OnPlayerDistanceUpdated);
-        public static readonly string OnTargetReached = nameof(OnTargetReached);
-        public static readonly string OnOpenDifficultyLevel = nameof(OnOpenDifficultyLevel);
+        public static readonly string TimeUpdated = nameof(TimeUpdated);
+        public static readonly string PlayerDistanceUpdated = nameof(PlayerDistanceUpdated);
+        public static readonly string TargetReached = nameof(TargetReached);
+        public static readonly string TryUnlockDifficultyLevel = nameof(TryUnlockDifficultyLevel);
+        public static readonly string OfferTrigger = nameof(OfferTrigger);
+        public static readonly string PurchaseOfferItem = nameof(PurchaseOfferItem);
     }
 }

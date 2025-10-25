@@ -17,9 +17,7 @@ namespace AppStates
         [Inject] IAppContext _appContext;
         public void Enter()
         {
-            _uiSystem.ShowView<LobbyBackground>();
-            _uiSystem.ShowView<LobbyMainDialog>();
-            
+            _uiSystem.ShowView<LobbyView, UserData>(_userSystem.GetUserData());
             EventsMap.Subscribe(UIEvents.OnPrepareNewGame, OnPrepareNewGame);
             EventsMap.Subscribe(UIEvents.OnShowResults, OnShowResults);
             
@@ -28,7 +26,7 @@ namespace AppStates
 
         public void Exit()
         {
-            _uiSystem.CloseView<LobbyBackground>();
+            _uiSystem.CloseView<LobbyView>();
             EventsMap.Unsubscribe(UIEvents.OnPrepareNewGame, OnPrepareNewGame);
             EventsMap.Unsubscribe(UIEvents.OnShowResults, OnShowResults);
             
@@ -37,7 +35,6 @@ namespace AppStates
         
         private void OnPrepareNewGame()
         {
-            _uiSystem.CloseView<LobbyMainDialog>();
             _uiSystem.ShowView<DifficultySelectDialog, List<LevelState>>(_userSystem.GetUserData().openedLevels);
         }
         

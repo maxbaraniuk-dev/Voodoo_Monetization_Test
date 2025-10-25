@@ -47,7 +47,7 @@ namespace Game.Player
                 return;
             
             _passedDistance += distance;
-            EventsMap.Dispatch(GameEvents.OnPlayerDistanceUpdated, _passedDistance);
+            EventsMap.Dispatch(GameEvents.PlayerDistanceUpdated, _passedDistance);
             _playerPosition = transform.position;
         }
 
@@ -61,7 +61,7 @@ namespace Game.Player
         {
             _targetReached = true;
             _character.linearVelocity = Vector2.zero;
-            EventsMap.Dispatch(GameEvents.OnTargetReached, _passedDistance);
+            EventsMap.Dispatch(GameEvents.TargetReached, _passedDistance);
         }
 
         public void PlayWinAnimation(Action onComplete)

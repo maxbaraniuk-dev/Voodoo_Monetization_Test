@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Game.Level;
 using Infrastructure;
@@ -34,18 +35,13 @@ namespace SaveLoad
             return data;
         }
 
-        public void SaveUserData(UserData userData)
+        public string LoadUserId()
         {
-            LocalStorage.Save(UserDataKey, userData);
-        }
-
-        public UserData LoadUserData()
-        {
-            var data = LocalStorage.Load<UserData>(UserDataKey);
+            var data = LocalStorage.Load<string>(UserDataKey);
             if (data != null) 
                 return data;
             
-            data = UserData.New();
+            data = Guid.NewGuid().ToString();
             LocalStorage.Save(UserDataKey, data);
             return data;
         }

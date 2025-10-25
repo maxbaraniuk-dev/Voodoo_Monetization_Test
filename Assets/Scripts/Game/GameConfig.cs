@@ -12,6 +12,9 @@ namespace Game
         public MazeData mediumMazeData;
         public MazeData hardMazeData;
         
+        public int upLockLevelsCoinsCost;
+        public int upLockLevelsStarsCost;
+        
         public PlayerController playerControllerPrefab;
         public GameObject gameBackground;
         

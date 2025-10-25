@@ -24,6 +24,8 @@ MonoBehaviour:
     exitCount: 1
     mazeWidth: 40
     mazeHeight: 40
+  upLockLevelsCoinsCost: 2000
+  upLockLevelsStarsCost: 5
   playerControllerPrefab: {fileID: 7711773320052191753, guid: 4827d1968a3b84594899748e7f4aeb61, type: 3}
   gameBackground: {fileID: 680339266487564282, guid: 30cde4bb944dc455b9b602d9d7709752, type: 3}
   wallPrefab: {fileID: 5335831365577491269, guid: 83a22ef5d48f4475389c89c596cdb153, type: 3}

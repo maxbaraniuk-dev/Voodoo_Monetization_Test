@@ -5,31 +5,103 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc84a5bc-15b5-4930-8bff-7122f75f69a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Context.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Context/AppContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Context/IAppContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Context/IAppContext.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Result.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Result.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Offers.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Offers/IOffersSystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Offers/IOffersSystem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Offers/OffersSystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Offers/OffersSystem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Store.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Store/IStore.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Store/IStore.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Store/StoreProvider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Store/StoreProvider.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PersonalOfferDialog.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PersonalOfferDialog.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Api.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Api.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Core.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Core/Empty.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Core/Empty.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Core/RequestMethodType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Core/RequestMethodType.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Core/Result.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Core/Result.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/DTO.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/DTO/AuthRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/DTO/AuthRequest.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/DTO/AuthResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/DTO/AuthResponse.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/DTO/OfferContainer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/DTO/OfferContainer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/DTO/OffersResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/DTO/OffersResponse.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/DTO/PurchaseOfferRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/DTO/PurchaseOfferRequest.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/DTO/PurchasePackageRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/DTO/PurchasePackageRequest.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/DTO/StorePackagesResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/DTO/StorePackagesResponse.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Game.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Game/Offers.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Game/Offers/BaseOffer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Game/Offers/BaseOffer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Game/Offers/ChainedOffer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Game/Offers/ChainedOffer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Game/Offers/EndlessOffer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Game/Offers/EndlessOffer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Game/Offers/MultiplePersonalOffer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Game/Offers/MultiplePersonalOffer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Game/Offers/OfferJsonConverter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Game/Offers/OfferJsonConverter.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Game/Offers/OfferTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Game/Offers/OfferTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Game/Offers/OfferType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Game/Offers/OfferType.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Game/Offers/PersonalOffer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Game/Offers/PersonalOffer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Game/Purchasables.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Game/Purchasables/PurchaseItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Game/Purchasables/PurchaseItem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Game/Purchasables/Reward.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Game/Purchasables/Reward.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Game/Purchasables/RewardType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Game/Purchasables/RewardType.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/MonetizationSDK.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/MonetizationSDK.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Store.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Store/StorePackage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Store/StorePackage.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Voodoo_Monetization_Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Voodoo_Monetization_Test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Configs/GameConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Configs/GameConfig.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Configs/UIConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Configs/UIConfig.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/DifficultySelectDialog.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/DifficultySelectDialog.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/LobbyBackgroung.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/LobbyBackgroung.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/LobbyMainDialog.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/LobbyMainDialog.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AppInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AppInstaller.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AppLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AppLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AppStates/GameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AppStates/GameState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AppStates/LobbyState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AppStates/LobbyState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Events/GameEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Events/GameEvents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameConfig.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/IGameSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/IGameSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Maze/MazeGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Maze/MazeGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/AppStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/AppStateMachine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Context.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Context.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Context/AppContext.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logs/ILog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Logs/ILog.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logs/LogEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Logs/LogEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Player/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveLoad/ISaveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SaveLoad/ISaveSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveLoad/LocalStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SaveLoad/LocalStorage.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveLoad/SaveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SaveLoad/SaveSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Core/BaseDataView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Core/BaseDataView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Core/BaseView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Core/BaseView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/DifficultySelectDialog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/DifficultySelectDialog.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/GameUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/GameUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/IUISystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/IUISystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/LobbyBackground.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/LobbyView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/LobbyBackground.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/LobbyView.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/LobbyMainDialog.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/LobbyMainDialog.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UISystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UISystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/User/IUserSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/User/IUserSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/User/UserData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/User/UserData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/User/UserSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/User/UserSystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
@@ -59,8 +131,10 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2e4f6f2f0cbc49d29c14929b6621bdbfc400/67/a92a19ce/VideoPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/696c5689f2c346b5934332508f5b555a4600/1a/9ba59d2a/JsonUtility.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/PublicAPI/Internal/AdsConfig.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Voodoo_Monetization_SDK/Assets/Runtime/PublicAPI/Monetization.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AppInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AppLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AppStates/GameState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AppStates/LobbyState.cs" root0="FORCE_HIGHLIGHTING" />
@@ -71,42 +145,74 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/IGameSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Level/DifficultyLevel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Infrastructure/ISystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Infrastructure/Result.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Logs/LogEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Offers/IOffersSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Offers/OffersSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveLoad/ISaveSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveLoad/SaveSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Store/IStore.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Store/StoreProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Core/BaseDataView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/DifficultySelectDialog.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/OfferDialog.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UISystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/User/IUserSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/User/UserData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/User/UserSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/Api.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/Models/DTO/AuthRequest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/Models/DTO/AuthResponse.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/Models/DTO/OffersResponse.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/Models/DTO/PurchaseOfferRequest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/Models/DTO/PurchasePackageRequest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/Models/DTO/StorePackagesResponse.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/Models/Game/Offers/BaseOffer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/Models/Game/Offers/ChainedOffer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/Models/Game/Offers/EndlessOffer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/Models/Game/Offers/MultiplePersonalOffer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/Models/Game/Offers/OfferJsonConverter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/Models/Game/Offers/OfferTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/Models/Game/Offers/OfferType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/Models/Game/Offers/PersonalOffer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/Models/Game/Purchasables/PurchaseItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/Models/Game/Purchasables/Reward.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/Models/Game/Purchasables/RewardType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/Models/Store/StorePackage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/MonetizationSDK.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="34LJlPp63kuRZwsGxXUmhX9D6IC" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "CodeLensConfigurable",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.2.7f2/Unity.app/Contents/MacOS/Unity" />
@@ -146,10 +252,10 @@
       <option name="useMixedMode" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="43652">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="1378">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="43652" />
+      <option name="pid" value="1378" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
         <list>
@@ -179,7 +285,11 @@
       <workItem from="1761129329464" duration="3762000" />
       <workItem from="1761151897469" duration="3346000" />
       <workItem from="1761313914118" duration="4703000" />
-      <workItem from="1761329999301" duration="2051000" />
+      <workItem from="1761329999301" duration="6822000" />
+      <workItem from="1761382330466" duration="2281000" />
+      <workItem from="1761384622709" duration="291000" />
+      <workItem from="1761384999568" duration="3007000" />
+      <workItem from="1761390852019" duration="15399000" />
     </task>
     <servers />
   </component>
@@ -225,13 +335,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/UI/DifficultySelectDialog.cs</url>
-          <line>62</line>
+          <line>64</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/UI/DifficultySelectDialog.cs" containingFunctionPresentation="Method 'UnlockLevel'">
             <startOffsets>
-              <option value="2383" />
+              <option value="2165" />
             </startOffsets>
             <endOffsets>
-              <option value="2475" />
+              <option value="2257" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="29" />
@@ -581,56 +691,160 @@
           <option name="timeStamp" value="120" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/AppLoader.cs</url>
-          <line>21</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/AppLoader.cs" containingFunctionPresentation="Method 'LoadApp'">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/SaveLoad/SaveSystem.cs</url>
+          <line>44</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/SaveLoad/SaveSystem.cs" containingFunctionPresentation="Method 'LoadUserData'">
             <startOffsets>
-              <option value="474" />
+              <option value="1308" />
             </startOffsets>
             <endOffsets>
-              <option value="522" />
+              <option value="1345" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="121" />
+          <option name="timeStamp" value="122" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/AppLoader.cs</url>
-          <line>20</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/AppLoader.cs" containingFunctionPresentation="Method 'LoadApp'">
+          <url>file://$PROJECT_DIR$/Assets/VoodooSDK/MonetizationSDK.cs</url>
+          <line>157</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/VoodooSDK/MonetizationSDK.cs" containingFunctionPresentation="Method 'GenerateStorePackagesResponse'">
             <startOffsets>
-              <option value="417" />
+              <option value="6278" />
             </startOffsets>
             <endOffsets>
-              <option value="465" />
+              <option value="6294" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="124" />
+          <option name="timeStamp" value="125" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/AppLoader.cs</url>
-          <line>14</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/AppLoader.cs" containingFunctionPresentation="Method 'Start'">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/UI/PersonalOfferDialog.cs</url>
+          <line>39</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/UI/PersonalOfferDialog.cs" containingFunctionPresentation="Method 'OnBuy'">
             <startOffsets>
-              <option value="349" />
+              <option value="1293" />
             </startOffsets>
             <endOffsets>
-              <option value="359" />
+              <option value="1355" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="126" />
+          <option name="timeStamp" value="144" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/AppLoader.cs</url>
-          <line>13</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/AppLoader.cs" containingFunctionPresentation="Method 'Start'">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Offers/OffersSystem.cs</url>
+          <line>55</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Offers/OffersSystem.cs" containingFunctionPresentation="Method 'OnPurchaseOfferItem'">
             <startOffsets>
-              <option value="294" />
+              <option value="1679" />
             </startOffsets>
             <endOffsets>
-              <option value="340" />
+              <option value="1712" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="127" />
+          <option name="timeStamp" value="145" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/UI/DifficultySelectDialog.cs</url>
+          <line>53</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/UI/DifficultySelectDialog.cs" containingFunctionPresentation="Method 'OnStartGame'">
+            <startOffsets>
+              <option value="1831" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1893" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="157" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Offers/OffersSystem.cs</url>
+          <line>93</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Offers/OffersSystem.cs" containingFunctionPresentation="Method 'PurchaseOfferItem'">
+            <startOffsets>
+              <option value="3097" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3166" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="163" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Offers/OffersSystem.cs</url>
+          <line>89</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Offers/OffersSystem.cs" containingFunctionPresentation="Method 'PurchaseOfferItem'">
+            <startOffsets>
+              <option value="2896" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3015" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="164" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/UI/LobbyView.cs</url>
+          <line>26</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/UI/LobbyView.cs" containingFunctionPresentation="Method 'UpdateView'">
+            <startOffsets>
+              <option value="793" />
+            </startOffsets>
+            <endOffsets>
+              <option value="837" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="166" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Offers/OffersSystem.cs</url>
+          <line>92</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Offers/OffersSystem.cs" containingFunctionPresentation="Method 'PurchaseOfferItem'">
+            <startOffsets>
+              <option value="3041" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3084" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="167" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/UI/DifficultySelectDialog.cs</url>
+          <line>59</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/UI/DifficultySelectDialog.cs" containingFunctionPresentation="Method 'OnUnlockLevelClick'">
+            <startOffsets>
+              <option value="1990" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2064" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="168" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/User/UserSystem.cs</url>
+          <line>61</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/User/UserSystem.cs" containingFunctionPresentation="Method 'TryUnlockDifficultyLevel'">
+            <startOffsets>
+              <option value="1708" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1819" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="169" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/User/UserSystem.cs</url>
+          <line>71</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/User/UserSystem.cs" containingFunctionPresentation="Method 'UnlockLevel'">
+            <startOffsets>
+              <option value="2100" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2153" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="170" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

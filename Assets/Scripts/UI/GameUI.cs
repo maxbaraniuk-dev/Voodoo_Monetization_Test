@@ -13,14 +13,14 @@ namespace UI
 
         public override void Show()
         {
-            EventsMap.Subscribe<float>(GameEvents.OnPlayerDistanceUpdated, PassedDistanceUpdateListener);
-            EventsMap.Subscribe<float>(GameEvents.OnTimeUpdated, TimeUpdateListener);
+            EventsMap.Subscribe<float>(GameEvents.PlayerDistanceUpdated, PassedDistanceUpdateListener);
+            EventsMap.Subscribe<float>(GameEvents.TimeUpdated, TimeUpdateListener);
         }
 
         protected override void CloseInternal()
         {
-            EventsMap.Unsubscribe<float>(GameEvents.OnPlayerDistanceUpdated, PassedDistanceUpdateListener);
-            EventsMap.Unsubscribe<float>(GameEvents.OnTimeUpdated, TimeUpdateListener);
+            EventsMap.Unsubscribe<float>(GameEvents.PlayerDistanceUpdated, PassedDistanceUpdateListener);
+            EventsMap.Unsubscribe<float>(GameEvents.TimeUpdated, TimeUpdateListener);
         }
 
         private void PassedDistanceUpdateListener(float distance)

@@ -8,7 +8,6 @@ namespace SaveLoad
     {
         void SaveCompletedLevel(LevelResultData levelResult);
         public AchievementsData LoadLevelsStat();
-        void SaveUserData(UserData userData);
-        UserData LoadUserData();
+        string LoadUserId();
     }
 }

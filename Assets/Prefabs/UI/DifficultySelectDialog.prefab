@@ -141,7 +141,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Unlock with Ads
+  m_text: Unlock
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0f211ecccc8fb4747ac58cc7f7e1e553, type: 2}
   m_sharedMaterial: {fileID: -4745415166244632114, guid: 0f211ecccc8fb4747ac58cc7f7e1e553, type: 2}

@@ -8,6 +8,8 @@ namespace User
     public class UserData
     {
         public string id;
+        public int coins;
+        public int stars;
         public List<LevelState> openedLevels;
         
         public static UserData New()
@@ -15,6 +17,8 @@ namespace User
             return new UserData
             {
                 id = Guid.NewGuid().ToString(),
+                coins = 1000,
+                stars = 1,
                 openedLevels = new List<LevelState>
                 {
                     new(){difficultyLevel = DifficultyLevel.Easy, isOpened = true},

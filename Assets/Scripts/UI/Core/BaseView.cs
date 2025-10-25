@@ -10,6 +10,7 @@ namespace UI.Core
         public ViewLayer Layer => layer;
 
         public virtual void Show() { }
+        public virtual void UpdateView() { }
         
         public void Close()
         {

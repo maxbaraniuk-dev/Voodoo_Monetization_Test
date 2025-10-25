@@ -1,12 +1,13 @@
-using Game.Level;
+using Cysharp.Threading.Tasks;
 using Infrastructure;
+using VoodooSDK.Game.Purchasables;
 
 namespace User
 {
     public interface IUserSystem
     {
+        UniTask<Result> LoadUserData();
         UserData GetUserData();
-        void SaveUserData();
-        void OpenDifficultyLevel(DifficultyLevel difficultyLevel);
+        void AddReward(Reward reward);
     }
 }

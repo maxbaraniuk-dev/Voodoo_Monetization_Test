@@ -258,14 +258,6 @@
       },
       "url": "https://packages.unity.com"
     },
-    "com.unity.textmeshpro": {
-      "version": "5.0.0",
-      "depth": 1,
-      "source": "builtin",
-      "dependencies": {
-        "com.unity.ugui": "2.0.0"
-      }
-    },
     "com.unity.timeline": {
       "version": "1.8.9",
       "depth": 0,
@@ -296,15 +288,6 @@
         "com.unity.modules.jsonserialize": "1.0.0"
       },
       "url": "https://packages.unity.com"
-    },
-    "com.voodoo.sdk": {
-      "version": "git@github.com:maxbaraniuk-dev/VoodooSDK.git",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {
-        "com.unity.textmeshpro": "4.0.0"
-      },
-      "hash": "5a4584d946081d3dfddcef06c704ced25fe9ca86"
     },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",
