@@ -2,7 +2,7 @@ using Context;
 using Game;
 using Infrastructure;
 using Logs;
-using Offers;
+using OffersSystem;
 using SaveLoad;
 using Store;
 using UI;
@@ -37,9 +37,9 @@ public class AppInstaller : MonoInstaller
         Container.Bind<IGameSystem>().To<GameSystem>().FromResolve();
         Container.Bind<ISystem>().To<GameSystem>().FromResolve();
             
-        Container.Bind<OffersSystem>().AsSingle().NonLazy();
-        Container.Bind<IOffersSystem>().To<OffersSystem>().FromResolve();
-        Container.Bind<ISystem>().To<OffersSystem>().FromResolve();
+        Container.Bind<OffersSystem.OffersSystem>().AsSingle().NonLazy();
+        Container.Bind<IOffersSystem>().To<OffersSystem.OffersSystem>().FromResolve();
+        Container.Bind<ISystem>().To<OffersSystem.OffersSystem>().FromResolve();
         
         Container.Bind<StoreProvider>().AsSingle().NonLazy();
         Container.Bind<IStore>().To<StoreProvider>().FromResolve();

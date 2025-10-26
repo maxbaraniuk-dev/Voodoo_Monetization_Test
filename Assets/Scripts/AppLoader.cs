@@ -3,7 +3,7 @@ using AppStates;
 using Cysharp.Threading.Tasks;
 using Infrastructure;
 using Logs;
-using Offers;
+using OffersSystem;
 using SaveLoad;
 using Store;
 using UI;
@@ -35,7 +35,7 @@ public class AppLoader : MonoBehaviour
         _systems.ForEach(system => system.Initialize());
 
         var userId = _saveSystem.LoadUserId();
-        var initResult = await MonetizationSDK.AuthenticateUser(userId);
+        var initResult = await MonetizationServer.AuthenticateUser(userId);
         if (!initResult.Success)
         {
             _log.Error(() => initResult.Message);

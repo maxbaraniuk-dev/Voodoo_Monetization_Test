@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using Game.Level;
 using Infrastructure;
 using Logs;
-using UnityEngine;
-using User;
 using Zenject;
 
 namespace SaveLoad
@@ -41,6 +39,7 @@ namespace SaveLoad
             if (data != null) 
                 return data;
             
+            _log.Debug(() => "User id not found, generating new one");
             data = Guid.NewGuid().ToString();
             LocalStorage.Save(UserDataKey, data);
             return data;

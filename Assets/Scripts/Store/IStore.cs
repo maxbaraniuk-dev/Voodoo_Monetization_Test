@@ -1,6 +1,6 @@
 using Cysharp.Threading.Tasks;
 using Infrastructure;
-using VoodooSDK.Store;
+using VoodooSDK.DTO.Store;
 
 namespace Store
 {

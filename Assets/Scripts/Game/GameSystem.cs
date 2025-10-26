@@ -8,7 +8,7 @@ using Logs;
 using SaveLoad;
 using UI;
 using UnityEngine;
-using VoodooSDK.Game.Offers;
+using VoodooSDK.DTO.Offers;
 using Zenject;
 
 namespace Game

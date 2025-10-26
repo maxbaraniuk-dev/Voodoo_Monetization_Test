@@ -6,8 +6,8 @@ using Game.Level;
 using Infrastructure;
 using UI;
 using VoodooSDK;
-using VoodooSDK.Game.Offers;
-using VoodooSDK.Game.Purchasables;
+using VoodooSDK.DTO.Offers;
+using VoodooSDK.DTO.Purchasables;
 using Zenject;
 
 namespace User
@@ -29,7 +29,7 @@ namespace User
 
         public async UniTask<Result> LoadUserData()
         {
-            var result = await MonetizationSDK.GetUserState();
+            var result = await MonetizationServer.GetUserState();
             if (!result.Success)
                 return Result.FailedResult(result.Message);
             

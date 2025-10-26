@@ -11,6 +11,7 @@ namespace User
         public int coins;
         public int stars;
         public List<LevelState> openedLevels;
+        public string [] segments;
         
         public static UserData New()
         {

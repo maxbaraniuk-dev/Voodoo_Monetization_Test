@@ -1,6 +1,6 @@
 using Cysharp.Threading.Tasks;
 using Infrastructure;
-using VoodooSDK.Game.Purchasables;
+using VoodooSDK.DTO.Purchasables;
 
 namespace User
 {

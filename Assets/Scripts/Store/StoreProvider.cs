@@ -1,16 +1,19 @@
 using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
 using Infrastructure;
-using VoodooSDK;
-using VoodooSDK.Store;
+using Logs;
+using VoodooSDK.DTO.Store;
+using Zenject;
 
 namespace Store
 {
     public class StoreProvider : IStore, ISystem
     {
+        [Inject] ILog _log;
         private List<StorePackage> _packages;
         public void Initialize()
         {
+            _log.Debug(() => "StoreProvider initialized");
         }
         
         public void Dispose()
@@ -19,13 +22,13 @@ namespace Store
 
         public async UniTask<Result> Purchase(string productId)
         {
-            var res = await MonetizationSDK.PurchasePackage(productId);
+            var res = await VoodooSDK.Store.PurchasePackage(productId);
             return !res.Success ? Result.FailedResult(res.Message) : Result.SuccessResult();
         }
 
         public async UniTask<Result> LoadAllProducts()
         {
-            var res = await MonetizationSDK.GetStorePackages();
+            var res = await VoodooSDK.Store.GetStorePackages();
             if (!res.Success)
                 return Result.FailedResult(res.Message);
             

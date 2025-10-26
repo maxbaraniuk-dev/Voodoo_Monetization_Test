@@ -5,22 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc84a5bc-15b5-4930-8bff-7122f75f69a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ErrorView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ErrorView.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PurchaseResultPopup.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PurchaseResultPopup.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Offers/OfferPresenter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Offers/OfferPresenter.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Offers/PersonalOfferPresenter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Offers/PersonalOfferPresenter.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/DTO/Auth.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/DTO/Offers.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/DTO/Store.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Voodoo_Monetization_Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Voodoo_Monetization_Test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Configs/UIConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Configs/UIConfig.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/GameUI.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/GameUI.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AppInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AppInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AppLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AppLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Context/AppContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Context/AppContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Events/UIEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Events/UIEvents.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Offers/OffersSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Offers/OffersSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoodooSDK/Api.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoodooSDK/Api.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoodooSDK/MonetizationSDK.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoodooSDK/MonetizationSDK.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/PersonalOfferDialog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PersonalOfferDialog.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/User/UserData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/User/UserData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VoodooSDK/DTO/AuthRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoodooSDK/DTO/Auth/AuthRequest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VoodooSDK/DTO/AuthRequest.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoodooSDK/DTO/Auth/AuthRequest.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VoodooSDK/DTO/AuthResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoodooSDK/DTO/Auth/AuthResponse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VoodooSDK/DTO/AuthResponse.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoodooSDK/DTO/Auth/AuthResponse.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VoodooSDK/Game/Offers/BaseOffer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Game/Offers/BaseOffer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +64,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Infrastructure/Result.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Logs/LogEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Offers/IOffersSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Offers/OfferPresenter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Offers/OffersSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Offers/PersonalOfferPresenter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveLoad/ISaveSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveLoad/SaveSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Store/IStore.cs" root0="FORCE_HIGHLIGHTING" />
@@ -78,9 +80,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/User/IUserSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/User/UserData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/User/UserSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/Api.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/DTO/AuthRequest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/DTO/AuthResponse.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/DTO/Auth/AuthRequest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/DTO/Auth/AuthResponse.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/DTO/OffersResponse.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/DTO/PurchaseOfferRequest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/DTO/PurchasePackageRequest.cs" root0="FORCE_HIGHLIGHTING" />
@@ -111,26 +112,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "CodeLensConfigurable",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.2.7f2/Unity.app/Contents/MacOS/Unity" />
@@ -170,15 +171,13 @@
       <option name="useMixedMode" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="1378">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="1378" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
-        <list>
-          <MonoRuntime />
-        </list>
+        <list />
       </option>
       <option name="selectedOptions">
         <list />
@@ -207,7 +206,7 @@
       <workItem from="1761382330466" duration="2281000" />
       <workItem from="1761384622709" duration="291000" />
       <workItem from="1761384999568" duration="3007000" />
-      <workItem from="1761390852019" duration="18715000" />
+      <workItem from="1761390852019" duration="25773000" />
     </task>
     <servers />
   </component>
