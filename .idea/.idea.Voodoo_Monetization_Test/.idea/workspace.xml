@@ -5,22 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc84a5bc-15b5-4930-8bff-7122f75f69a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Offers/OfferPresenter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Offers/OfferPresenter.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Offers/PersonalOfferPresenter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Offers/PersonalOfferPresenter.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/DTO/Auth.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/DTO/Offers.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/VoodooSDK/DTO/Store.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Voodoo_Monetization_Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Voodoo_Monetization_Test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Offers/OffersSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Offers/OffersSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/PersonalOfferDialog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PersonalOfferDialog.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/User/UserData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/User/UserData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoodooSDK/DTO/AuthRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoodooSDK/DTO/Auth/AuthRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoodooSDK/DTO/AuthRequest.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoodooSDK/DTO/Auth/AuthRequest.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoodooSDK/DTO/AuthResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoodooSDK/DTO/Auth/AuthResponse.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoodooSDK/DTO/AuthResponse.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoodooSDK/DTO/Auth/AuthResponse.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoodooSDK/Game/Offers/BaseOffer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoodooSDK/Game/Offers/BaseOffer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VoodooSDK/Game.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,10 +48,14 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Infrastructure/ISystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Infrastructure/Result.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Logs/LogEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Offers/IOffersSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Offers/OfferPresenter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Offers/OffersSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Offers/PersonalOfferPresenter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/OffersSystem/IOffersSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/OffersSystem/Offers/BaseOffer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/OffersSystem/Offers/ChainedOffer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/OffersSystem/Offers/EndlessOffer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/OffersSystem/Offers/MultiplePersonalOffer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/OffersSystem/Offers/PersonalOffer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/OffersSystem/OffersSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/OffersSystem/PurchaseItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveLoad/ISaveSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveLoad/SaveSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Store/IStore.cs" root0="FORCE_HIGHLIGHTING" />
@@ -74,7 +63,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Core/BaseDataView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/DifficultySelectDialog.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ErrorView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/PersonalOfferDialog.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/OfferViews/PersonalOfferDialog.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/PurchaseResultPopup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UISystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/User/IUserSystem.cs" root0="FORCE_HIGHLIGHTING" />
@@ -82,23 +71,25 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/User/UserSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/DTO/Auth/AuthRequest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/DTO/Auth/AuthResponse.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/DTO/OffersResponse.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/DTO/PurchaseOfferRequest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/DTO/PurchasePackageRequest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/DTO/StorePackagesResponse.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/Game/Offers/BaseOffer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/Game/Offers/ChainedOffer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/Game/Offers/EndlessOffer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/Game/Offers/MultiplePersonalOffer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/Game/Offers/OfferJsonConverter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/Game/Offers/OfferTrigger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/Game/Offers/OfferType.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/Game/Offers/PersonalOffer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/Game/Purchasables/PurchaseItem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/Game/Purchasables/Reward.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/Game/Purchasables/RewardType.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/MonetizationSDK.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/Store/StorePackage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/DTO/Offers/BaseOfferData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/DTO/Offers/ChainedOfferData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/DTO/Offers/EndlessOfferData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/DTO/Offers/MultiplePersonalOfferData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/DTO/Offers/OfferJsonConverter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/DTO/Offers/OfferTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/DTO/Offers/OfferType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/DTO/Offers/OffersResponse.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/DTO/Offers/PersonalOfferData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/DTO/Purchasables/PurchaseItemData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/DTO/Purchasables/PurchaseItemRequest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/DTO/Purchasables/Reward.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/DTO/Purchasables/RewardType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/DTO/Store/PurchasePackageRequest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/DTO/Store/StorePackage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/DTO/Store/StorePackagesResponse.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/MonetizationServer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/NetworkProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoodooSDK/Store.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -207,6 +198,7 @@
       <workItem from="1761384622709" duration="291000" />
       <workItem from="1761384999568" duration="3007000" />
       <workItem from="1761390852019" duration="25773000" />
+      <workItem from="1761489589049" duration="13501000" />
     </task>
     <servers />
   </component>
@@ -289,13 +281,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/SaveLoad/LocalStorage.cs</url>
-          <line>11</line>
+          <line>9</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/SaveLoad/LocalStorage.cs" containingFunctionPresentation="Method 'Save'">
             <startOffsets>
-              <option value="244" />
+              <option value="210" />
             </startOffsets>
             <endOffsets>
-              <option value="277" />
+              <option value="243" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="41" />
@@ -609,13 +601,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/SaveLoad/SaveSystem.cs</url>
-          <line>44</line>
+          <line>43</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/SaveLoad/SaveSystem.cs" containingFunctionPresentation="Method 'LoadUserData'">
             <startOffsets>
-              <option value="1308" />
+              <option value="1348" />
             </startOffsets>
             <endOffsets>
-              <option value="1345" />
+              <option value="1385" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="122" />
@@ -638,10 +630,10 @@
           <line>69</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/User/UserSystem.cs" containingFunctionPresentation="Method 'UnlockLevel'">
             <startOffsets>
-              <option value="2072" />
+              <option value="2073" />
             </startOffsets>
             <endOffsets>
-              <option value="2125" />
+              <option value="2126" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="170" />
@@ -651,10 +643,10 @@
           <line>73</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/User/UserSystem.cs" containingFunctionPresentation="Method 'UnlockLevel'">
             <startOffsets>
-              <option value="2325" />
+              <option value="2326" />
             </startOffsets>
             <endOffsets>
-              <option value="2404" />
+              <option value="2405" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="172" />
